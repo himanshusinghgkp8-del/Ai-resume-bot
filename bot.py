@@ -14,7 +14,7 @@ async def generate_resume(update: Update, context: ContextTypes.DEFAULT_TYPE):
     user_text = update.message.text
 
     response = openai.ChatCompletion.create(
-        model="gpt-3.5-turbo",
+        model="gpt-4o-mini",
         messages=[
             {"role": "system", "content": "You are a professional resume writer."},
             {"role": "user", "content": user_text}
